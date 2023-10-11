@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "946704466618",
+    "project_id": "diy-760",
+    "storage_bucket": "diy-760.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:946704466618:android:85f4315a43e41b40903883",
+        "android_client_info": {
+          "package_name": "com.achieve760.diy760"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "946704466618-e1hqnc4fm4v9k39u46tqt79n0tii9s8o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTfsURwYa9JrR4OQCdKuSIM-aX1M0Apto"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "946704466618-e1hqnc4fm4v9k39u46tqt79n0tii9s8o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

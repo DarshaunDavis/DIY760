@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">DIY 760</string>
+    <string name="logo_description">Logo</string>
+    <string name="email">Email</string>
+    <string name="confirm_email">Confirm Email</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="firstname">First Name</string>
+    <string name="register">Not registered yet? Register here</string>
+    <string name="guest_login">Use app as a Guest</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_invalid_email">Please enter a valid email address</string>
+    <string name="login_redirect">Already have an account? Login</string>
+    <string name="submit">Submit</string>
+    <string name="error_confirm_email_mismatch">Email addresses do not match</string>
+    <string name="error_password_length">Password must be at least 8 characters long</string>
+    <string name="error_password_digits">Password must contain at least one digit</string>
+    <string name="error_password_symbols">Password must contain at least one symbol</string>
+    <string name="error_confirm_password_mismatch">Passwords do not match</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="section2_options">
+        <item>Click to Select a Credit Bureau</item>
+        <item>Equifax
+            \nP.O. Box 740256
+            \nAtlanta, GA 30374-0256\n
+            \nDear Equifax\n</item>
+        <item>Experian
+            \nP.O. Box 4500
+            \nAllen TX 75013\n
+            \nDear Experian\n</item>
+        <item>TransUnion Consumer Solutions
+            \nP.O. Box 2000
+            \nChester, PA 19016-2000\n
+            \nDear TransUnion\n</item>
+    </string-array>
+
+    <string-array name="name_dispute_options">
+        <item>Click to Select Your Reason for Disputing</item>
+        <item>Misspelled Name</item>
+        <item>Not My Name</item>
+    </string-array>
+
+    <string-array name="address_dispute_options">
+        <item>Click to Select Your Reason for Disputing</item>
+        <item>Incorrect Address</item>
+        <item>Not My Address</item>
+    </string-array>
+
+    <string-array name="accounts_dispute_options">
+        <item>Click to Select Your Reason for Disputing</item>
+        <item>Wrong Creditor</item>
+        <item>Wrong Balance</item>
+        <item>Wrong Credit Limit</item>
+        <item>Wrong Monthly Payment</item>
+        <item>Wrong Payment History</item>
+        <item>Wrong Last Payment</item>
+        <item>Incorrect Payment Status</item>
+        <item>Incorrect Past Due Amount Amount</item>
+        <item>Incorrect Account Status</item>
+        <item>Wrong Number of Days Late</item>
+        <item>Incorrect Closed Date</item>
+        <item>Passed Statute of Limitations</item>
+        <item>Not My Account</item>
+    </string-array>
+
+    <string-array name="inquiries_dispute_options">
+        <item>Click to Select Your Reason for Disputing</item>
+        <item>Wrong Inquiry Date</item>
+        <item>Passed Statute of Limitations</item>
+        <item>Unauthorized Inquiry</item>
+        <item>Not My Inquiry</item>
+    </string-array>
+
+    <string-array name="records_dispute_options">
+        <item>Click to Select Your Reason for Disputing</item>
+        <item>Wrong Filing Date</item>
+        <item>Wrong Ending Date</item>
+        <item>Wrong Court Number</item>
+        <item>Wrong Record Status</item>
+        <item>Wrong Date Paid</item>
+        <item>Wrong Record Amount</item>
+        <item>Wrong Plaintiff</item>
+        <item>Passed Statute of Limitations</item>
+        <item>Not My Record</item>
+    </string-array>
+</resources>
