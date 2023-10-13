@@ -10,27 +10,25 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <!-- Your form elements go here -->
-
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-<TableRow
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:gravity="center_horizontal">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
 
-    <TextView
-        android:id="@+id/headerTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Build Your Dispute Letter!"
-        android:textSize="24sp"
-        android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/headerTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/build_your_dispute_letter"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
 
-</TableRow>
+            </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
@@ -42,20 +40,22 @@
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight="2"
+                    android:autofillHints="@string/firstname"
                     android:ems="10"
-                    android:hint="First Name"
+                    android:hint="@string/firstname"
                     android:inputType="textPersonName"
-                    android:nextFocusDown="@+id/lastNameEditText"/>
+                    android:nextFocusDown="@+id/lastNameEditText" />
 
                 <EditText
                     android:id="@+id/lastNameEditText"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight="2"
+                    android:autofillHints="@string/last_name"
                     android:ems="10"
-                    android:hint="Last Name"
+                    android:hint="@string/last_name"
                     android:inputType="textPersonName"
-                    android:nextFocusDown="@+id/addressEditText"/>
+                    android:nextFocusDown="@+id/addressEditText" />
 
             </TableRow>
 
@@ -69,20 +69,22 @@
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight="3"
+                    android:autofillHints="@string/address"
                     android:ems="14"
-                    android:hint="Address"
+                    android:hint="@string/address"
                     android:inputType="textPostalAddress"
-                    android:nextFocusDown="@+id/apartmentEditText"/>
+                    android:nextFocusDown="@+id/apartmentEditText" />
 
                 <EditText
                     android:id="@+id/apartmentEditText"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight="1"
+                    android:autofillHints="@string/apt"
                     android:ems="4"
-                    android:hint="Apt"
+                    android:hint="@string/apt"
                     android:inputType="text"
-                    android:nextFocusDown="@+id/cityEditText"/>
+                    android:nextFocusDown="@+id/cityEditText" />
 
             </TableRow>
 
@@ -96,101 +98,106 @@
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight="3.5"
+                    android:autofillHints="@string/city"
                     android:ems="10"
-                    android:hint="City"
+                    android:hint="@string/city"
                     android:inputType="text"
-                    android:nextFocusDown="@+id/stateEditText"/>
+                    android:nextFocusDown="@+id/stateEditText" />
 
                 <EditText
                     android:id="@+id/stateEditText"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight="1"
+                    android:autofillHints="@string/state"
                     android:ems="10"
-                    android:hint="State"
+                    android:hint="@string/state"
                     android:inputType="textCapCharacters"
                     android:maxLength="2"
-                    android:nextFocusDown="@+id/zipEditText"
-                    />
+                    android:nextFocusDown="@+id/zipEditText" />
 
                 <EditText
                     android:id="@+id/zipEditText"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight="2"
+                    android:autofillHints="@string/zip_code"
                     android:ems="6"
-                    android:hint="Zip Code"
+                    android:hint="@string/zip_code"
                     android:inputType="number"
                     android:maxLength="5"
                     android:nextFocusDown="@+id/SocialEditText" />
 
             </TableRow>
+
             <TableRow>
+
                 <EditText
                     android:id="@+id/socialEditText"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight="2"
+                    android:autofillHints="@string/last_4_of_social"
                     android:ems="10"
-                    android:hint="Last 4 of Social"
+                    android:hint="@string/last_4_of_social"
                     android:inputType="number"
-                    android:nextFocusDown="@+id/birthDatePickerButton"/>
+                    android:nextFocusDown="@+id/birthDatePickerButton" />
 
                 <Button
                     android:id="@+id/birthDatePickerButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Select Birthdate"
                     android:layout_marginTop="8dp"
-                    android:textColor="@color/white"
-                    android:nextFocusDown="@+id/datePickerButton"/>
+                    android:autofillHints="@string/select_birthdate"
+                    android:nextFocusDown="@+id/datePickerButton"
+                    android:text="@string/select_birthdate"
+                    android:textColor="@color/white" />
 
             </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_horizontal">
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/datePickerButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Select Date"
                     android:layout_marginTop="8dp"
-                    android:textColor="@color/white"
-                    android:nextFocusDown="@+id/section2Spinner"/>
+                    android:nextFocusDown="@+id/section2Spinner"
+                    android:text="@string/select_date"
+                    android:textColor="@color/white" />
 
             </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_horizontal">
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
 
                 <Spinner
                     android:id="@+id/section2Spinner"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:nextFocusDown="@+id/radioButton4Yes"/>
+                    android:nextFocusDown="@+id/radioButton4Yes" />
 
             </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_horizontal">
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/radioButtonsInstructionsLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Please select the items you would \nlike to include in your letter:"
-                    />
+                    android:text="@string/please_select_the_items_you_would_nlike_to_include_in_your_letter" />
 
             </TableRow>
 
@@ -202,9 +209,9 @@
                     android:id="@+id/radioButtons4Label"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="6"
                     android:layout_gravity="center_vertical"
-                    android:text="Dispute inaccurate or incorrect names?" />
+                    android:layout_weight="6"
+                    android:text="@string/dispute_inaccurate_or_incorrect_names" />
 
                 <RadioGroup
                     android:id="@+id/radioGroup4"
@@ -217,14 +224,14 @@
                         android:id="@+id/radioButton4Yes"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Yes"
-                        android:nextFocusDown="@+id/radioButton5Yes" />
+                        android:nextFocusDown="@+id/radioButton5Yes"
+                        android:text="@string/yes" />
 
                     <RadioButton
                         android:id="@+id/radioButton4No"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="No" />
+                        android:text="@string/no" />
                 </RadioGroup>
             </TableRow>
 
@@ -232,6 +239,7 @@
                 android:id="@+id/name_form_table"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <TableRow
                     android:id="@+id/name_form_row1"
                     android:layout_width="match_parent"
@@ -243,7 +251,9 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:hint="Inaccurate Name" />
+                        android:hint="@string/inaccurate_name"
+                        android:autofillHints="@string/inaccurate_name"
+                        android:inputType="textPersonName"/>
                 </TableRow>
 
                 <TableRow
@@ -263,7 +273,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="+"
+                        android:text="@string/plus_button"
                         android:textColor="@color/white" />
                 </TableRow>
             </TableLayout>
@@ -276,10 +286,9 @@
                     android:id="@+id/radioButtons5Label"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="6"
                     android:layout_gravity="center_vertical"
-                    android:text="Dispute inaccurate or incorrect addresses?"
-                    />
+                    android:layout_weight="6"
+                    android:text="@string/dispute_inaccurate_or_incorrect_addresses" />
 
                 <RadioGroup
                     android:id="@+id/radioGroup5"
@@ -292,16 +301,14 @@
                         android:id="@+id/radioButton5Yes"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Yes"
                         android:nextFocusDown="@+id/radioButton6Yes"
-                        />
+                        android:text="@string/yes" />
 
                     <RadioButton
                         android:id="@+id/radioButton5No"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="No"
-                        />
+                        android:text="@string/no" />
                 </RadioGroup>
             </TableRow>
 
@@ -309,6 +316,7 @@
                 android:id="@+id/address_form_table"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <TableRow
                     android:id="@+id/address_form_row1"
                     android:layout_width="match_parent"
@@ -320,15 +328,20 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
-                        android:hint="Address" />
+                        android:hint="@string/address"
+                        android:autofillHints="@string/address"
+                        android:inputType="textPostalAddress"/>
 
                     <EditText
                         android:id="@+id/apartment_form"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:hint="Apartment" />
+                        android:hint="@string/apt"
+                        android:autofillHints="@string/apt"
+                        android:inputType="text"/>
                 </TableRow>
+
                 <TableRow
                     android:id="@+id/address_form_row2"
                     android:layout_width="match_parent"
@@ -340,23 +353,30 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
-                        android:hint="City" />
+                        android:hint="@string/city"
+                        android:autofillHints="@string/city"
+                        android:inputType="text"/>
 
                     <EditText
                         android:id="@+id/state_form"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:hint="State" />
+                        android:hint="@string/state"
+                        android:autofillHints="@string/state"
+                        android:inputType="text"/>
 
                     <EditText
-                    android:id="@+id/zip_form"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:hint="Zip" />
+                        android:id="@+id/zip_form"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:hint="@string/zip_code"
+                        android:autofillHints="@string/zip_code"
+                        android:inputType="number"/>
 
                 </TableRow>
+
                 <TableRow
                     android:id="@+id/address_form_row3"
                     android:layout_width="match_parent"
@@ -374,8 +394,8 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="+"
-                        android:textColor="@color/white"  />
+                        android:text="@string/plus_button"
+                        android:textColor="@color/white" />
                 </TableRow>
             </TableLayout>
 
@@ -402,18 +422,22 @@
                         android:id="@+id/address_first_edit_text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="First Text Field" />
+                        android:hint="@string/first_text_field"
+                        android:autofillHints="@string/first_text_field"
+                        android:inputType="text"/>
 
                     <EditText
                         android:id="@+id/address_second_edit_text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Second Text Field" />
+                        android:hint="@string/second_text_field"
+                        android:autofillHints=""
+                        android:inputType="text"/>
 
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="button" />
+                        android:text="@string/button" />
 
                 </LinearLayout>
 
@@ -427,10 +451,9 @@
                     android:id="@+id/radioButtons6Label"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="6"
                     android:layout_gravity="center_vertical"
-                    android:text="Dispute inaccurate or incorrect accounts?"
-                    />
+                    android:layout_weight="6"
+                    android:text="@string/dispute_inaccurate_or_incorrect_accounts" />
 
                 <RadioGroup
                     android:id="@+id/radioGroup6"
@@ -443,16 +466,14 @@
                         android:id="@+id/radioButton6Yes"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Yes"
                         android:nextFocusDown="@+id/radioButton7Yes"
-                        />
+                        android:text="@string/yes" />
 
                     <RadioButton
                         android:id="@+id/radioButton6No"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="No"
-                        />
+                        android:text="@string/no" />
                 </RadioGroup>
             </TableRow>
 
@@ -460,6 +481,7 @@
                 android:id="@+id/accounts_form_table"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <TableRow
                     android:id="@+id/accounts_form_row1"
                     android:layout_width="match_parent"
@@ -471,14 +493,19 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:hint="Account Name" />
+                        android:hint="@string/account_name"
+                        android:autofillHints="@string/account_name"
+                        android:inputType="text"/>
 
                     <EditText
                         android:id="@+id/account_number"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:hint="Account Number" />
+                        android:hint="@string/account_number"
+                        android:autofillHints="@string/account_number"
+                        android:inputType="text"
+                        tools:ignore="TextFields" />
                 </TableRow>
 
                 <TableRow
@@ -498,7 +525,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="+"
+                        android:text="@string/plus_button"
                         android:textColor="@color/white" />
                 </TableRow>
             </TableLayout>
@@ -526,18 +553,22 @@
                         android:id="@+id/accounts_first_edit_text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="First Text Field" />
+                        android:hint="@string/first_text_field"
+                        android:autofillHints="@string/first_text_field"
+                        android:inputType="text"/>
 
                     <EditText
                         android:id="@+id/accounts_second_edit_text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Second Text Field" />
+                        android:hint="@string/second_text_field"
+                        android:autofillHints="@string/second_text_field"
+                        android:inputType="text"/>
 
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="button" />
+                        android:text="@string/button" />
 
                 </LinearLayout>
 
@@ -548,15 +579,13 @@
                 android:layout_height="wrap_content">
 
 
-
                 <TextView
                     android:id="@+id/radioButtons7Label"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="6"
                     android:layout_gravity="center_vertical"
-                    android:text="Dispute inaccurate or incorrect inquiries?"
-                    />
+                    android:layout_weight="6"
+                    android:text="@string/dispute_inaccurate_or_incorrect_inquiries" />
 
                 <RadioGroup
                     android:id="@+id/radioGroup7"
@@ -569,16 +598,14 @@
                         android:id="@+id/radioButton7Yes"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Yes"
                         android:nextFocusDown="@+id/radioButton8Yes"
-                        />
+                        android:text="@string/yes" />
 
                     <RadioButton
                         android:id="@+id/radioButton7No"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="No"
-                        />
+                        android:text="@string/no" />
                 </RadioGroup>
             </TableRow>
 
@@ -586,6 +613,7 @@
                 android:id="@+id/inquiries_form_table"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <TableRow
                     android:id="@+id/inquiries_form_row1"
                     android:layout_width="match_parent"
@@ -597,15 +625,17 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:hint="Inquiry Name" />
+                        android:hint="@string/inquiry_name"
+                        android:autofillHints="@string/inquiry_name"
+                        android:inputType="text"/>
 
                     <Button
                         android:id="@+id/inquiry_date"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Select Date"
-                        android:textColor="@color/white"  />
+                        android:text="@string/select_date"
+                        android:textColor="@color/white" />
                 </TableRow>
 
                 <TableRow
@@ -625,7 +655,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="+"
+                        android:text="@string/plus_button"
                         android:textColor="@color/white" />
                 </TableRow>
             </TableLayout>
@@ -653,18 +683,22 @@
                         android:id="@+id/inquiries_first_edit_text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="First Text Field" />
+                        android:hint="@string/first_text_field"
+                        android:autofillHints=""
+                        android:inputType="text" />
 
                     <EditText
                         android:id="@+id/inquiries_second_edit_text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Second Text Field" />
+                        android:hint="@string/second_text_field"
+                        android:autofillHints=""
+                        android:inputType="text" />
 
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="button" />
+                        android:text="@string/button" />
 
                 </LinearLayout>
 
@@ -678,10 +712,9 @@
                     android:id="@+id/radioButtons8Label"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="6"
                     android:layout_gravity="center_vertical"
-                    android:text="Dispute inaccurate or incorrect public records?"
-                    />
+                    android:layout_weight="6"
+                    android:text="@string/dispute_inaccurate_or_incorrect_public_records" />
 
                 <RadioGroup
                     android:id="@+id/radioGroup8"
@@ -694,16 +727,14 @@
                         android:id="@+id/radioButton8Yes"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Yes"
                         android:nextFocusDown="@+id/radioButton9Yes"
-                        />
+                        android:text="@string/yes" />
 
                     <RadioButton
                         android:id="@+id/radioButton8No"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="No"
-                        />
+                        android:text="@string/no" />
                 </RadioGroup>
             </TableRow>
 
@@ -711,6 +742,7 @@
                 android:id="@+id/records_form_table"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <TableRow
                     android:id="@+id/records_form_row1"
                     android:layout_width="match_parent"
@@ -722,15 +754,17 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:hint="Record Name" />
+                        android:hint="@string/record_name"
+                        android:autofillHints="@string/record_name"
+                        android:inputType="text"/>
 
                     <Button
                         android:id="@+id/record_date"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Select Date"
-                        android:textColor="@color/white"  />
+                        android:text="@string/select_date"
+                        android:textColor="@color/white" />
                 </TableRow>
 
                 <TableRow
@@ -750,7 +784,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="+"
+                        android:text="@string/plus_button"
                         android:textColor="@color/white" />
                 </TableRow>
             </TableLayout>
@@ -778,18 +812,22 @@
                         android:id="@+id/records_first_edit_text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="First Text Field" />
+                        android:hint="@string/first_text_field"
+                        android:autofillHints=""
+                        android:inputType="text" />
 
                     <EditText
                         android:id="@+id/records_second_edit_text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Second Text Field" />
+                        android:hint="@string/second_text_field"
+                        android:autofillHints=""
+                        android:inputType="text" />
 
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="button" />
+                        android:text="@string/button" />
 
                 </LinearLayout>
 
@@ -803,10 +841,9 @@
                     android:id="@+id/radioButtons9Label"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="6"
                     android:layout_gravity="center_vertical"
-                    android:text="Freeze your credit report?"
-                    />
+                    android:layout_weight="6"
+                    android:text="@string/freeze_your_credit_report" />
 
                 <RadioGroup
                     android:id="@+id/radioGroup9"
@@ -819,16 +856,14 @@
                         android:id="@+id/radioButton9Yes"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Yes"
                         android:nextFocusDown="@+id/radioButton10Yes"
-                        />
+                        android:text="@string/yes" />
 
                     <RadioButton
                         android:id="@+id/radioButton9No"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="No"
-                        />
+                        android:text="@string/no" />
                 </RadioGroup>
 
 
@@ -842,10 +877,9 @@
                     android:id="@+id/radioButtons10Label"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="6"
                     android:layout_gravity="center_vertical"
-                    android:text="Stop offers in the mail?"
-                    />
+                    android:layout_weight="6"
+                    android:text="@string/stop_offers_in_the_mail" />
 
                 <RadioGroup
                     android:id="@+id/radioGroup10"
@@ -858,16 +892,14 @@
                         android:id="@+id/radioButton10Yes"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Yes"
                         android:nextFocusDown="@+id/radioButton12Yes"
-                        />
+                        android:text="@string/yes" />
 
                     <RadioButton
                         android:id="@+id/radioButton10No"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="No"
-                        />
+                        android:text="@string/no" />
                 </RadioGroup>
             </TableRow>
 
@@ -879,10 +911,9 @@
                     android:id="@+id/radioButtons12Label"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="6"
                     android:layout_gravity="center_vertical"
-                    android:text="Are you including additional documents?"
-                    />
+                    android:layout_weight="6"
+                    android:text="@string/are_you_including_additional_documents" />
 
                 <RadioGroup
                     android:id="@+id/radioGroup12"
@@ -895,15 +926,13 @@
                         android:id="@+id/radioButton12Yes"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Yes"
-                        />
+                        android:text="@string/yes" />
 
                     <RadioButton
                         android:id="@+id/radioButton12No"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="No"
-                        />
+                        android:text="@string/no" />
                 </RadioGroup>
             </TableRow>
 
@@ -911,6 +940,7 @@
                 android:id="@+id/documents_form_table"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <TableRow
                     android:id="@+id/documents_form_row1"
                     android:layout_width="match_parent"
@@ -922,14 +952,16 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="4"
-                        android:hint="Enter name of document" />
+                        android:hint="@string/enter_name_of_document"
+                        android:autofillHints="@string/enter_name_of_document"
+                        android:inputType="text"/>
 
                     <Button
                         android:id="@+id/documents_add_button"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="+"
+                        android:text="@string/plus_button"
                         android:textColor="@color/white" />
                 </TableRow>
             </TableLayout>
@@ -943,8 +975,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:textColor="@color/white"
-            android:text="Generate Letter" />
+            android:text="@string/generate_letter"
+            android:textColor="@color/white" />
 
         <TextView
             android:id="@+id/generatedContent"
@@ -956,17 +988,17 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_horizontal">
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/printButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:textColor="@color/white"
                 android:layout_marginEnd="20dp"
-                android:text="Print"
+                android:text="@string/print_button"
+                android:textColor="@color/white"
                 android:visibility="gone" />
 
             <Button
@@ -974,9 +1006,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:textColor="@color/white"
                 android:layout_marginEnd="20dp"
-                android:text="Save"
+                android:text="@string/save_button"
+                android:textColor="@color/white"
                 android:visibility="gone" />
 
             <Button
@@ -984,8 +1016,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
+                android:text="@string/clear_button"
                 android:textColor="@color/white"
-                android:text="Clear"
                 android:visibility="gone" />
 
         </LinearLayout>

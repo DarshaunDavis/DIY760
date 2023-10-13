@@ -20,6 +20,41 @@
     <string name="error_confirm_password_mismatch">Passwords do not match</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="build_your_dispute_letter">Build Your Dispute Letter!</string>
+    <string name="last_name">Last Name</string>
+    <string name="address">Address</string>
+    <string name="apt">Apt</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="zip_code">Zip Code</string>
+    <string name="last_4_of_social">Last 4 of Social</string>
+    <string name="select_birthdate">Select Birthdate</string>
+    <string name="select_date">Select Date</string>
+    <string name="please_select_the_items_you_would_nlike_to_include_in_your_letter">Please select the items you would \nlike to include in your letter:</string>
+    <string name="dispute_inaccurate_or_incorrect_names">Dispute inaccurate or incorrect names?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="inaccurate_name">Inaccurate Name</string>
+    <string name="dispute_inaccurate_or_incorrect_addresses">Dispute inaccurate or incorrect addresses?</string>
+    <string name="plus_button">+</string>
+    <string name="dispute_inaccurate_or_incorrect_accounts">Dispute inaccurate or incorrect accounts?</string>
+    <string name="account_name">Account Name</string>
+    <string name="account_number">Account Number</string>
+    <string name="dispute_inaccurate_or_incorrect_public_records">Dispute inaccurate or incorrect public records?</string>
+    <string name="dispute_inaccurate_or_incorrect_inquiries">Dispute inaccurate or incorrect inquiries?</string>
+    <string name="inquiry_name">Inquiry Name</string>
+    <string name="record_name">Record Name</string>
+    <string name="freeze_your_credit_report">Freeze your credit report?</string>
+    <string name="stop_offers_in_the_mail">Stop offers in the mail?</string>
+    <string name="are_you_including_additional_documents">Are you including additional documents?</string>
+    <string name="generate_letter">Generate Letter</string>
+    <string name="enter_name_of_document">Enter name of document</string>
+    <string name="print_button">Print</string>
+    <string name="save_button">Save</string>
+    <string name="clear_button">Clear</string>
+    <string name="first_text_field">First Text Field</string>
+    <string name="second_text_field">Second Text Field</string>
+    <string name="button">button</string>
 
     <string-array name="section2_options">
         <item>Click to Select a Credit Bureau</item>
